@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
-<body background="img/fundo.png">
+<body background="{{url_for('static', filename='img/fundo.png')}}">
     <header class="header">
-        <img src="img/logo.png" alt="Logo do Site">
+        <img src="{{url_for('static', filename='img/logo.png')}}" alt="Logo do Site">
         <nav>
            <ul class="menu">
-               <li><a href="index.html">Home</a></li>
-               <li><a href="quem-somos.html">Quem Somos</a></li>
-               <li><a href="contato.html">Contato</a></li>
+               <li><a href="index">Home</a></li>
+               <li><a href="quem-somos">Quem Somos</a></li>
+               <li><a href="contato">Contato</a></li>
            </ul> 
         </nav>
     </header>
     <div>
-        <img src="img/capa.png" alt="Capa do Site" class="capa">
+        <img src="{{url_for('static', filename='img/capa.png')}}" alt="Capa do Site" class="capa">
     </div>
     <div class="texto">
         <h2>Sobre a universidade</h2>
