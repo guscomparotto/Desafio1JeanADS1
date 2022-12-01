@@ -1,0 +1,11 @@
+create database contatos;
+use contatos;
+
+create table contatos (
+id int primary key auto_increment,
+email varchar(255),
+assunto varchar(255),
+descricao varchar(255)
+);
+
+SELECT * FROM contatos;
